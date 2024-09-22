@@ -172,12 +172,12 @@ En este ejercicio, exploramos los objetos fundamentales de Salesforce que gestio
 Un Lead es un posible cliente o una oportunidad de negocio que aún no ha sido calificado. Representa el primer paso en el ciclo de ventas antes de convertirlo en una cuenta, contacto u oportunidad.
 
 **Datos estándar:**
-- Nombre
+- Nombre completo
 - Empresa
 - Cargo
 - Correo electrónico
 - Teléfono
-- Estado del Lead
+- Estado del Prospecto
 
 </details>
 
@@ -190,8 +190,8 @@ Una Account representa una empresa o persona con la que tienes una relación com
 - Nombre de la cuenta
 - Tipo de cuenta (cliente, proveedor, etc.)
 - Dirección
-- Industria
-- Número de empleados
+- Sector
+- Número de la cuenta
 
 </details>
 
@@ -201,11 +201,11 @@ Una Account representa una empresa o persona con la que tienes una relación com
 Un Contact es una persona asociada a una cuenta con la que se tiene una relación de negocio. Está relacionado directamente con el objeto Account.
 
 **Datos estándar:**
-- Nombre
+- Nombre completo
 - Correo electrónico
 - Teléfono
 - Cargo
-- Cuenta asociada
+- Nombre de la cuenta
 
 </details>
 
@@ -216,10 +216,10 @@ Una Opportunity representa una oportunidad de negocio o posible venta. Está rel
 
 **Datos estándar:**
 - Nombre de la oportunidad
-- Monto
+- Importe
 - Etapa de la oportunidad
 - Fecha de cierre
-- Cuenta relacionada
+- Nombre de la cuenta
 
 </details>
 
@@ -233,7 +233,7 @@ Un Product es un bien o servicio que una empresa vende. Se utiliza en conjunto c
 - Código del producto
 - Descripción
 - Familia de productos
-- Activo o inactivo
+- Activo
 
 </details>
 
@@ -243,8 +243,9 @@ Un Product es un bien o servicio que una empresa vende. Se utiliza en conjunto c
 Un PriceBook es una lista de precios que contiene productos con precios específicos. Cada cuenta o venta puede estar asociada a una lista de precios.
 
 **Datos estándar:**
-- Nombre del PriceBook
-- Activo o inactivo
+- Nombre de la lista de precios
+- Activo
+- Descripción
 
 </details>
 
@@ -256,7 +257,7 @@ Una Quote es una oferta formal de precios y condiciones hecha a un cliente poten
 **Datos estándar:**
 - Nombre de la cotización
 - Fecha de expiración
-- Oportunidad asociada
+- Nombre de la oportunidad
 - Total del monto
 - Estado
 
@@ -269,9 +270,9 @@ Un Asset es un bien o producto que el cliente ha comprado o que está usando, co
 
 **Datos estándar:**
 - Nombre del activo
-- Producto asociado
+- Nombre del Producto
 - Número de serie
-- Cuenta relacionada
+- Nombre de la Cuenta
 - Fecha de compra
 
 </details>
@@ -285,7 +286,8 @@ Un Case es un registro de un problema o pregunta presentada por un cliente, com�
 - Asunto
 - Estado
 - Prioridad
-- Cuenta o contacto relacionado
+- Nombre de la cuenta
+- Nombre del contacto
 - Fecha de cierre
 
 </details>
